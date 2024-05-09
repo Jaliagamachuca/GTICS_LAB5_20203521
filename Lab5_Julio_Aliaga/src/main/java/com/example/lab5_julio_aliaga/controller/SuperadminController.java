@@ -35,5 +35,12 @@ public class SuperadminController {
         return "/Plantilla_Vista_Medicamentos";
     }
 
+    @GetMapping("/EditarMedicamento")
+    public String EditarMedicamento(Model model) {
+        List<Medicamentos> lista = medicamentosRepository.findAll();
+        model.addAttribute("listTransportation", lista);
+        return "/Plantilla_Vista_Registrar_Medicamento";
+    }
+
 
 }

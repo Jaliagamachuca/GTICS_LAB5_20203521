@@ -100,7 +100,7 @@
                       <td>
                           <div class="card-footer pt-1 br-3 border-top-0">
                                 <div class="text-center">
-                                    <a class="btn btn-success">
+                                    <a th:href="@{'/EditarMedicamento'}" class="btn btn-success">
                                         <i class=""></i> Editar
                                     </a>
                                 </div>
@@ -126,6 +126,9 @@
               </table>
               <div class="pagination  d-flex justify-content-center" style="padding: 50px">
               </div>
+          </div>
+          <div class="col-12 text-center">
+              <button onclick="window.location.href='/EditarMedicamento'" type="button" class="btn btn-primary boton-primario">Registrar Nuevo Técnico</button>
           </div>
       </div>
   </div>
